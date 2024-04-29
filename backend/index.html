@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Automobile Management System</h1>
+        <nav>
+            <a href="admin_site.html">Admin Panel</a> |
+            <a href="inventory_lookup.html">Inventory Lookup</a>
+        </nav>
+    </header>
+
+    <main>
+    <div id="content">
+        <!-- Image of a Car -->
+        <div class="car-image">
+            <img src="car-image.jpg" alt="Car Image" style="width:100%; max-width:600px; display:block; margin:20px auto;">
+        </div>
+
+        <section id="search-section">
+            <h2>Search for Vehicles</h2>
+            <div class="search-container">
+                <label for="brand-select">Select Brand:</label>
+                <select id="brand-select">
+                    <!-- Options for brands will be dynamically added here -->
+                </select>
+                <label for="model-select">Select Model:</label>
+                <select id="model-select">
+                    <!-- Options for models will be dynamically added here -->
+                </select>
+                    <button onclick="searchAndDisplayVehicles()">Search</button>
+            </div>
+        </section>
+
+        <section id="vehicles-section">
+                <h2>Available Vehicles</h2>
+                <div id="vehicles-list">
+                    <!-- Vehicle information will be dynamically added here -->
+                </div>
+            </section>
+
+            <section id="dealers-section">
+                <h2>Authorized Dealers</h2>
+                <div id="dealers-list">
+                    <!-- Dealer information will be dynamically added here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

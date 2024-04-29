@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Lookup - Automobile Management System</title>
+    <link rel="stylesheet" href="admin_style.css">
+</head>
+<body>
+    <header>
+        <h1>Inventory Lookup</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="admin_site.html">Admin Panel</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Check Local Inventory</h2>
+            <form id="local-inventory-form">
+                <label for="local-dealer">Choose a Dealer:</label>
+                <select id="local-dealer">
+                    <!-- Options for dealers will be dynamically added here -->
+                </select>
+                <button type="submit">Check Inventory</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Check Nearby Dealers</h2>
+            <form id="nearby-inventory-form">
+                <label for="area">Select Area:</label>
+                <input type="text" id="area" name="area" required>
+                <button type="submit">Search Nearby Dealers</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
